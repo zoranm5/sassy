@@ -1,6 +1,12 @@
-$mycolor: #005DFF;
+$colors: (
+    primary: #005DFF,
+    accent: #FFF6BB
+
+);
+
+
 
 body {
-     background-color: $mycolor;
+     background-color: map-get($colors, primary);
 
 }
