@@ -1,6 +1,7 @@
 $colors: (
     primary: #005DFF,
     primary-light: lighten(#005DFF, 40%),
+    primary-dark: darken(#005DFF, 40%),
     accent: #FFF6BB
 
 );
@@ -36,7 +37,7 @@ body {
         text-decoration: none;
         padding: $padding;
         display: block;
-        text-decoration: uppercase;
+        text-transform: uppercase;
 
     }
 
@@ -95,7 +96,23 @@ main {
 
 
         }
-    }
 
-    }
+        p {
+            font-size: 1.4em;
+        }
+
+        a {
+            color: color(primary-dark);
+            border-radius: $borders;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: color(accent);
+            display: block;
+            text-align: center;
+            margin: 50px auto 0 auto;
+            padding: $padding;
+        }
+     }
+}
 

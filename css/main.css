@@ -22,8 +22,7 @@ body header a {
   text-decoration: none;
   padding: 15px;
   display: block;
-  -webkit-text-decoration: uppercase;
-          text-decoration: uppercase;
+  text-transform: uppercase;
 }
 
 main section#card {
@@ -71,5 +70,22 @@ main section#primary h1 {
   font-size: 3em;
   margin-top: 10px;
   text-transform: uppercase;
+}
+
+main section#primary p {
+  font-size: 1.4em;
+}
+
+main section#primary a {
+  color: #001333;
+  border-radius: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #FFF6BB;
+  display: block;
+  text-align: center;
+  margin: 50px auto 0 auto;
+  padding: 15px;
 }
 /*# sourceMappingURL=main.css.map */
