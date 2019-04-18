@@ -10,7 +10,15 @@ $padding: 15px;
 $borders: 15px;
 
 @function color($color-name){
-    @return map-get($colors,$color-name)
+    @return map-get($colors, $color-name)
+}
+
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
 }
 
 body, html {
@@ -29,6 +37,11 @@ body {
         height: 100%;
         position: absolute;
         z-index: -1;
+
+        @include desktop {
+            clip-path: polygon(0 0, 75% 0, 55% 100%, 0% 100%);
+
+        }
     
     }
 
